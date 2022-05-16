@@ -43,9 +43,21 @@ def main(good_letters_list, bad_letters_list, good_positions, bad_positions):
         sentinel = False
     if sentinel:
       good_positions_candidates.append(candidate)
+  # print(f"good_positions_candidates: {good_positions_candidates}")
       
+  # Check that letters not found in position X are in not in position X in candidates
+  bad_positions_candidates = []
+  for candidate in good_positions_candidates:
+    sentinel = True
+    for k,v in bad_positions.items():
+      if candidate[k] in v:
+        # print(f"v={v}, candidate[k]: {candidate[k]}")
+        sentinel = False
+    if sentinel:
+      bad_positions_candidates.append(candidate)
+
   print("\nCandidate words found:")
-  for candidate in sorted(good_positions_candidates):
+  for candidate in sorted(bad_positions_candidates):
     print(f"{candidate}")
 
 if __name__ == "__main__":
