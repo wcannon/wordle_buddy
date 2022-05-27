@@ -1,5 +1,12 @@
 # wordle_buddy
 
+**Background**:  
+This program is meant to be a 'aid' for using while playing the Wordle game.  You are meant to use this program during the Wordle game.  
+
+When Wordle gives you feedback about your guesses you use that information as input to this program.  
+
+This program searches the 2309 possible words to Wordle with the information you provide and outputs a list of possible words.
+
 **Usage**:
 The general idea is to pass in all data guessed so far (in 1 concise string) from a wordle game and have the possible wordle words left as output.  
 
