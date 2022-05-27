@@ -21,7 +21,7 @@ If 1+ letters are in the word but not in that position they are listed together 
 
 **part 2**: the letters guessed and not found in the word  
 
-**Example for the word "sable"**  
+**Example for the word "wrote"**  
 python3 ./guesses.py '#,r,-w,#,e:adjxq'
 
 **Here is the 'translation' of the guess above:**    
